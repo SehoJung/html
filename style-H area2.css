@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+    padding: 8px 12px;
+}
+
+.hold {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar_logo i{
+    color:tomato; 
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 8px 14px;
+}
+
+.navbar_menu li:hover{
+    background-color: #d49446;
+    border-radius:  4px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0px;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+    font-size: 25px;
+}
+
+.quit a {
+    display: inline-block;
+    position: fixed ;
+    right: 0;
+    margin-right: 40px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.navbar_toggleBtn {
+    display: none;
+}
+
+.map {
+    height: 900px;
+    width: 1400px;
+    background-image:url("화성그린2동 도면.jpg");
+    background-repeat : no-repeat;
+    background-size: cover;
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 40px;
+    display: inline-block;
+    position: fixed;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    width:100%;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding:8px 24px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        width:100%;
+    }
+
+    .navbar_menu li {
+        width:100%;
+        text-align:center;
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .quit {
+        font-size: 30px;
+    }
+
+    .name {
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .navbar_toggleBtn {
+       display: block;
+       position: absolute;
+       right:28px;
+       font-size: 27px;
+       color: #d49446;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+
+}

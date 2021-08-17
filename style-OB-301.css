@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    background-color: rgb(104, 108, 119); 
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+    padding: 8px 12px;
+    position: sticky;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar_logo i{
+    color:tomato; 
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 8px 14px;
+}
+
+.navbar_menu li:hover{
+    background-color: #d49446;
+    border-radius:  4px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0px;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+    font-size: 25px;
+}
+
+.quit {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 40px;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+.OB-301 {
+    margin-left: -20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-around;
+    width:100%;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+.Set {
+    margin-left : -20px;
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   font-size: 22px;
+}
+
+.Motor {
+    list-style: none;
+    display: none;
+}
+
+
+.Motor li {
+    font-size: 20px;
+}
+
+.Invertor {
+    list-style: none;
+    display: none;
+}
+
+
+.Invertor li {
+    font-size: 20px;
+}
+
+.DC-Reactor {
+    list-style: none;
+    display: none;
+}
+
+
+.DC-Reactor li {
+    font-size: 20px;
+}
+
+.name {
+    margin-top: 5px;
+    font-size: 28px;
+    display: flex;
+    font-family: 'Jua', sans-serif;
+    justify-content: center;
+    width:100%;
+    color: rgb(255, 255, 255);
+}
+
+
+.Invertor.active,
+    .Motor.active,
+    .DC-Reactor.active {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+.navbar_toggleBtn {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding:8px 24px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+
+    .navbar_menu li {
+        width:100%;
+        text-align:center;
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .quit {
+
+    
+        font-size: 30px;
+    }
+
+    .name {
+        margin-top: 5px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .OB-301 {
+        flex-direction: column;
+        margin-top: 0px;
+        align-items: center;
+    }
+
+    .Set {
+        margin-top: 20px;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+     }
+
+    .navbar_toggleBtn {
+       display: block;
+       position: absolute;
+       right:28px;
+       font-size: 27px;
+       color: #d49446;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+
+}

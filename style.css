@@ -1,0 +1,60 @@
+.container {
+    font-size: 0;
+}
+body {
+    margin: 0;
+}
+.item{
+    font-size: 1rem;
+    padding : 5%;
+}
+.item-a {
+    background-color: yellow;
+}
+
+.item-b {
+    background-color:greenyellow
+}
+
+.item-c {
+    background-color: rgb(37, 233, 63);
+}
+
+.item-d {
+    background-color:lightseagreen
+}
+
+@media screen and (min-width: 700px){
+    .container {
+        background-color:lightgray;
+    }
+    
+    .container:after {
+        content:'';
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+    .item{
+        display:inline-block;
+        vertical-align:top;
+    }
+    .item-a {
+        width:30%;
+    }
+    
+    .item-b {
+        width: 50%;
+    }
+    
+    .item-c {
+        width:50%;
+    }
+    
+    .item-d {
+        width:30%;
+    }
+    
+
+}
